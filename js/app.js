@@ -1,3 +1,14 @@
+// slick carousel
+$('.banner-area').slick({
+  autoplay: true,
+  speed: 800,
+  arrows: false,
+  dots: true,
+  fade: true,
+
+});
+
+
 // for navbar
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
