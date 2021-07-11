@@ -12,6 +12,7 @@ html{
     flex-direction: column;
     align-items: center;
     background-color:var(--bg-color) ;
+    padding-bottom: 80px;
 }
 .heading{
     margin: 50px 0px 0px 0px;
@@ -28,8 +29,9 @@ html{
 }
 .menu-nav{
     display: flex;
-    width: 50vw;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: center;
+   flex-wrap: wrap;
 }
 .menu-nav .foo-item{
     width: 130px;
@@ -40,6 +42,8 @@ html{
     border-radius: var(--border-radius);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 40px;
     transition: all 0.5s;
 }
@@ -80,9 +84,112 @@ html{
  
     justify-content: space-between;
     font-family: var(--common-font-family);
-    font-size: var(--nav-font);
-    padding: 10px 0px;
+   font-size: var(--nav-font);
+    padding: 20px 0px 10px 0px;
 }
 .price{
     color: var(--heading-color);
+}
+
+/* desert */
+.desert-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--bg-color) ;
+    padding-bottom: 80px;
+}
+.desert-box{
+   
+    display: flex;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.desert-content{
+    display: flex;
+    border: 1px solid #79bcdb;
+    align-items: center;
+    margin: 30px 30px 10px 30px;
+    padding: 20px 30px;
+    transition: all 0.5s;
+}
+.desert-content:hover{
+background-color: white;
+border: none;
+
+}
+.des-img{
+    width: 100px;
+    height: 100px;
+}
+.des-img img{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+}
+.desert-data{
+    margin-left: 20px;
+    font-family: var(--common-font-family);
+    font-size: var(--nav-font);
+    line-height: 25px;
+}
+/* drinks */
+.drinks-wrapper{
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.drinks-box{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.drinks-content{
+    margin: 30px 20px 10px 20px;
+    padding: 20px 30px;
+    transition: all 0.5s;
+    border: 1px solid #79bcdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.drinks-content:hover{
+    background-color: white;
+    border: none;
+    
+    }
+.dri-img{
+    width: 180px;
+    height: 180px;
+}
+
+.dri-img img{
+    transition: all 0.4s;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.dri-img:hover img{
+
+    transform: scale(1.1)rotate(5deg);
+}
+.drinks-data{
+    font-family: var(--common-font-family);
+    font-size: var(--nav-font);
+    padding-top: 20px;
+}
+.drinks-data .price{
+    position: absolute;
+    bottom: 70px;
+    right: 25px;
+    background-color: var(--heading-color);
+    color: white;
+    padding: 14px 10px;
+    border-radius: 50%;
 }

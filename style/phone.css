@@ -5,11 +5,17 @@ html {
   --common-font-family: "Roboto", sans-serif;
   --nav-font: 18px;
 }
+@media screen and (max-width: 1355px) {
+  .menu-container{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1170px) {
   .banner-text{
     width: 100%;
     padding: 0px 30px;
   }
+  
 }
 @media screen and (max-width: 1050px) {
   /* navbar */
@@ -89,5 +95,36 @@ font-size: 13vw;
 .banner-text p{
   font-size: 14px;
   padding: 0px 15px;
+}
+/* menu */
+.heading{
+  font-size: 4rem;
+  }
+  .menu-img{
+    width: 95%;
+    height: 170px;
+   }
+.menu-img img{
+    width: 100%;
+    height: 100%;
+}
+.desert-content {
+  align-items: center;
+  margin: 30px 0px 10px 0px;
+ padding: 20px 10px;
+}
+.drinks-content {
+  margin: 30px 0px 10px 0px;
+  }
+  .menu-content{
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.menu-data{
+  width: 95%;
 }
 }
