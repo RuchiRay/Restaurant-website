@@ -1,4 +1,5 @@
 // slick carousel
+
 $('.banner-area').slick({
   autoplay: true,
   speed: 800,
@@ -7,8 +8,21 @@ $('.banner-area').slick({
   fade: true,
 
 });
-
-
+// swiper slider
+const swiper = new Swiper(".swiper-container", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+})
 // for navbar
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");

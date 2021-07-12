@@ -5,6 +5,11 @@ html {
   --common-font-family: "Roboto", sans-serif;
   --nav-font: 18px;
 }
+/* @media screen and (max-width:1505px) {
+  .box-wrapper{
+    width: 100%;
+  }
+} */
 @media screen and (max-width: 1355px) {
   .menu-container{
     width: 100%;
@@ -15,7 +20,13 @@ html {
     width: 100%;
     padding: 0px 30px;
   }
-  
+  /* chef */
+  .chef-content{
+    margin: 30px 30px 80px 30px;
+  }
+  .chef{
+    padding-bottom: 0px;
+  }
 }
 @media screen and (max-width: 1050px) {
   /* navbar */
@@ -68,6 +79,13 @@ html {
   li.fade {
     opacity: 1;
   }
+
+  /* about */
+  .about-text{
+    width: 90%;
+    line-height: 25px;
+    font-size: 16px;
+  }
   
 }
 
@@ -75,6 +93,18 @@ html {
 .banner-text h2{
 font-size: 12vw;
 }
+/* testimonial */
+.swiper-container{
+  width:100%;
+}
+}
+@media screen and (max-width: 700px){
+  #chef-heading{
+    font-size: 3.5rem;
+  }
+  .sub-heading.chefs-sub {
+    font-size: 35px;
+  }
 }
 @media screen and (max-width: 600px){
 .banner-text h2{
@@ -82,6 +112,10 @@ font-size: 13vw;
 }
 .banner-text p{
   font-size: 16px;
+}
+/* testimonial */
+#test-heading{
+  font-size: 3.5rem;
 }
 }
 @media screen and (max-width: 400px){
@@ -126,5 +160,43 @@ font-size: 13vw;
 }
 .menu-data{
   width: 95%;
+}
+.about-text{
+  font-size: 12px;
+  /* line-height: 5px; */
+}
+/* chef */
+#chef-heading{
+  font-size: 3rem;
+}
+.chef-wrapper{
+  width: 100%;
+}
+.chef-content{
+  margin: 30px 0px 80px 0px;
+  width: 90%;
+}
+/* testimonial
+ */
+ #test-heading{
+   font-size: 2.8rem;
+ }
+ .quote{
+   font-size: 35px;
+ }
+ #page span {
+  width: 8px;
+  height: 8px;
+  
+}
+#next-btn,
+#prev-btn {
+ width: 20px;
+ height: 20px;
+ padding: 10px;
+}
+#next-btn::after,
+#prev-btn::after {
+  font-size: 14px;
 }
 }
