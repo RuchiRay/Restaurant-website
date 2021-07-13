@@ -38,7 +38,7 @@ html {
 }
 .menu-nav .foo-item {
   width: 130px;
-  background-color: white;
+  background-color: aliceblue;
   border: none;
   padding: 10px 30px;
   font-size: var(--nav-font);
@@ -53,6 +53,7 @@ html {
 .foo-item.mixitup-control-active {
   background-color: var(--heading-color);
   color: white;
+  color: aliceblue;
 }
 .menu-container {
   display: flex;
@@ -115,7 +116,7 @@ html {
   transition: all 0.5s;
 }
 .desert-content:hover {
-  background-color: white;
+  background-color: aliceblue;
   border: none;
 }
 .des-img {
@@ -159,8 +160,8 @@ html {
   position: relative;
 }
 .drinks-content:hover {
-  background-color: white;
   border: none;
+  background-color: aliceblue;
 }
 .dri-img {
   width: 180px;
@@ -214,7 +215,7 @@ html {
   text-align: center;
   line-height: 35px;
   margin: 20px 0px 40px 0px;
-  color: white;
+  color: aliceblue;
   font-family: var(--common-font-family);
   font-size: var(--nav-font);
 }

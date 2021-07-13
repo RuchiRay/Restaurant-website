@@ -130,7 +130,7 @@ width: 800px;
 }
 .banner-text-wrapper{
     position: absolute;
-    color: white;
+    color: aliceblue;
     z-index: 4;
     height: 100%;
     width: 100%;
@@ -159,7 +159,7 @@ width: 800px;
 
 .banner-btn{
   text-decoration: none;
-  color: white;
+  color: aliceblue;
   font-family: var(--common-font-family);
   font-size: 16px;
   background-color: var(--heading-color);

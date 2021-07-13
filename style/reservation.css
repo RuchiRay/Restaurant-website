@@ -1,0 +1,76 @@
+html {
+    --logo-font: "Euphoria Script", cursive;
+    --heading-color: #dc143c;
+    --heading-font: 45px;
+    --common-font-family: "Roboto", sans-serif;
+    --nav-font: 18px;
+    --bg-color: #c6d7df;
+    --border-radius: 5px;
+  }
+  .reservation{
+    
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(../images/res.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding-bottom: 100px;
+      
+      
+  }
+  .book-form{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 50px 20px 70px 20px;
+      border-radius: 10px;
+      align-items: center;
+  }
+  .form{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px;
+  }
+  .form div{
+      margin:15px 30px;
+  }
+  .form div p{
+      color: white;
+      color: var(--heading-color);
+      padding-bottom: 7px;
+      font-family: var(--common-font-family);
+      font-size: var(--nav-font);
+  }
+  .form div input{
+      border: 2px solid var(--bg-color);
+      background: transparent !important;
+      /* background: white; */
+      width: 150px;
+      height: 35px;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+  }
+   ::placeholder{
+      color: var(--bg-color);
+  }
+ .form div input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+ .form div input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+ .form div input[type="number"]::-webkit-inner-spin-button {
+    cursor: pointer
+    
+  }

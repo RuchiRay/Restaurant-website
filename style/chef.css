@@ -37,7 +37,7 @@ html {
 }
 .chef-content:hover {
   transform: translateY(-20px);
-  background-color: white;
+  background-color: aliceblue;
 }
 .chef-content:hover .chef-name {
   color: rgba(0, 0, 0, 0.7);
@@ -155,7 +155,7 @@ html {
   color: var(--heading-color);
 }
 .review {
-  color: white;
+  color: aliceblue;
 }
 .test-data {
   padding: 10px 0px;
@@ -182,11 +182,12 @@ html {
 }
 .box-wrapper{
   display: flex;
-  flex-direction: row-reverse;
+ 
   align-items: center;
   /* width: 100%; */
  position: relative;
  height: 90vh;
+ justify-content: center;
 }
 .box2{
   height: 400px;
@@ -207,6 +208,7 @@ html {
   width: 600px;
   position: absolute;
  left: -50px;
+ justify-content: center;
  }
  
 .box3-info {
@@ -217,7 +219,8 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: white;
+ 
+  background-color: aliceblue;
   padding: 0px 20px;
   margin: 10px;
   transition: all 0.4s;
@@ -229,13 +232,14 @@ html {
    background-color: var(--heading-color);
 }
 .box3-info:hover .box-icon img{
-   background-color: white;
+   
+   background-color: aliceblue;
 }
 .box3-info:hover .box-heading{
-   color: white;
+   color: aliceblue;
 }
 .box3-info:hover .box3-text{
-   color: white;
+   color: aliceblue;
 }
 .box-icon {
   height: 70px;
