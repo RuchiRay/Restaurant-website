@@ -13,6 +13,7 @@ html{
     --common-font-family:'Roboto', sans-serif;
     --nav-font:18px;
    --bg-color:#C6D7DF;
+   scroll-behavior: smooth;
 }
 
 /* navbar */
@@ -67,6 +68,11 @@ width: 800px;
     text-decoration: none;
    font-family: var(--common-font-family);
    font-size: var(--nav-font);
+   font-size: 16px;
+}
+.menu-items ul li a:hover{
+  color: var(--heading-color);
+ 
 }
 .menu {
     background-color: transparent;
@@ -168,6 +174,12 @@ width: 800px;
  text-transform: uppercase;
   padding: 10px 25px;
   border-radius: 5px;
+  transition:all 0.4s;
+}
+.banner-btn:hover{
+  background: aliceblue;
+  color: var(--heading-color);
+ 
 }
 /* slick dots */
 .slick-dots{
