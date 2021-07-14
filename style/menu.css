@@ -61,6 +61,8 @@ html {
   width: 80%;
   align-items: center;
   justify-content: center;
+  height: 600px;
+  overflow: hidden;
 }
 .menu-content {
   margin: 30px 30px 10px 30px;
