@@ -171,6 +171,7 @@ html {
 }
 
 /* speciality */
+
 .speciality {
   background-color: var(--bg-color);
   display: flex;
@@ -186,7 +187,7 @@ html {
   align-items: center;
   /* width: 100%; */
  position: relative;
- height: 90vh;
+ height: 700px;
  justify-content: center;
 }
 .box2{
@@ -194,6 +195,9 @@ html {
   width: 600px;
   position: absolute;
   right: -50px;
+  display: flex;
+  justify-content: center;
+ 
 }
 .box2 img{
   height: 100%;
@@ -204,11 +208,11 @@ html {
   right: 10%;
   display: flex;
   flex-wrap: wrap;
-  /* width: 40%; */
   width: 600px;
   position: absolute;
  left: -50px;
  justify-content: center;
+ 
  }
  
 .box3-info {
@@ -244,7 +248,9 @@ html {
 .box-icon {
   height: 70px;
   width: 70px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box-icon img {
   width: 100%;

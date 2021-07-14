@@ -54,3 +54,6 @@ const mixer = mixitup(".menu-container", {
     effectsIn: 'fade translateY(-100%)'
 }
 });
+
+// for contacts
+

@@ -40,6 +40,22 @@ html {
     transform: translate(-50%, -50%);
     width: 90%;
   }
+  /* contact */
+  .box-wrapper.contact{
+    height: 1100px;
+    flex-direction: column;
+  }
+  .box2.contact {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .box3.contact{
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
 }
 @media screen and (max-width: 1050px) {
   /* navbar */
@@ -103,6 +119,7 @@ html {
   .book-form{
     width: 70%;
   }
+  
 }
 
 @media screen and (max-width: 900px) {
@@ -138,6 +155,25 @@ html {
   .box3{
     top: 60%;
   }
+  .box-wrapper.contact{
+    height: 1700px;
+  }
+  .box2.contact{
+    top: 17%;
+    width: 90%;
+  }
+  .box3.contact{
+    top: 63%;
+  }
+  .contact-form{
+    width: 90%;
+  }
+  .contact-form-inner div input{
+    width: 85%;
+  }
+  .contact-form-inner div textarea{
+    width: 85%;
+  }
 }
 @media screen and (max-width: 600px) {
   .banner-text h2 {
@@ -161,6 +197,22 @@ html {
   .form div{
     margin: 15px 10px;
   }
+  /* footer */
+  .footer h2{
+    font-size: 1.3rem;
+   }
+
+.footer p, .footer h3{
+   font-size: 14px;
+}
+
+.footer-icons a{
+   
+    font-size: 1.4rem;
+   
+}
+
+
 }
 @media screen and (max-width: 400px) {
   .banner-text {
@@ -253,6 +305,9 @@ html {
   .box-wrapper{
     height: 1200px;
   }
+  .sub-heading.special-sub-heading{
+    margin-top: -25px;
+  }
 /* reservation*/
 .form{
   flex-direction: column;
@@ -264,6 +319,16 @@ html {
 }
 .reservation{
   height: 900px;
+}
+/* contact */
+.contact-form{
+  width: 95%;
+}
+.contact-form-inner div input{
+  width: 90%;
+}
+.contact-form-inner div textarea{
+  width: 90%;
 }
 }
 @media screen and (max-width: 400px) {

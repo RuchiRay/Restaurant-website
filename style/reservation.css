@@ -1,76 +1,198 @@
 html {
-    --logo-font: "Euphoria Script", cursive;
-    --heading-color: #dc143c;
-    --heading-font: 45px;
-    --common-font-family: "Roboto", sans-serif;
-    --nav-font: 18px;
-    --bg-color: #c6d7df;
-    --border-radius: 5px;
-  }
-  .reservation{
-    
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-          url(../images/res.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        padding-bottom: 100px;
-      
-      
-  }
-  .book-form{
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      background: rgba(0, 0, 0, 0.8);
-      padding: 50px 20px 70px 20px;
-      border-radius: 10px;
-      align-items: center;
-  }
-  .form{
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 30px;
-  }
-  .form div{
-      margin:15px 30px;
-  }
-  .form div p{
-      color: white;
-      color: var(--heading-color);
-      padding-bottom: 7px;
-      font-family: var(--common-font-family);
-      font-size: var(--nav-font);
-  }
-  .form div input{
-      border: 2px solid var(--bg-color);
-      background: transparent !important;
-      /* background: white; */
-      width: 150px;
-      height: 35px;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-  }
-   ::placeholder{
-      color: var(--bg-color);
-  }
- .form div input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-  }
- .form div input[type="time"]::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-  }
- .form div input[type="number"]::-webkit-inner-spin-button {
-    cursor: pointer
-    
-  }
+  --logo-font: "Euphoria Script", cursive;
+  --heading-color: #dc143c;
+  --heading-font: 45px;
+  --common-font-family: "Roboto", sans-serif;
+  --nav-font: 18px;
+  --bg-color: #c6d7df;
+  --border-radius: 5px;
+}
+.reservation {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/res.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 600px;
+  padding-bottom: 100px;
+}
+.book-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 50px 20px 70px 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+.form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.form div {
+  margin: 15px 30px;
+}
+.form div p {
+  color: white;
+  color: var(--heading-color);
+  padding-bottom: 7px;
+  font-family: var(--common-font-family);
+  font-size: var(--nav-font);
+}
+.form div input {
+  /* border: 2px solid var(--bg-color); */
+  /* background: transparent !important; */
+  outline: none;
+  border: none;
+  background-color: rgb(44, 43, 43);
+  /* background: white; */
+  width: 150px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+::placeholder {
+  color: var(--bg-color);
+  color: gray;
+}
+.form div input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.form div input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.form div input[type="number"]::-webkit-inner-spin-button {
+  cursor: pointer;
+}
+
+/* contact us */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-icon a {
+  font-size: 60px;
+  color: var(--heading-color);
+}
+.box-heading.contact {
+  font-size: 40px;
+}
+.box2.contact {
+  /* background-color: var(--heading-color); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/contact.jpg);
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  left: -50px;
+}
+.box3.contact {
+  left: -560px;
+}
+.box3-text.contact {
+  font-size: 20px;
+}
+.box3-info:hover .box-icon a {
+  color: aliceblue;
+}
+.contact-form-inner {
+  font-family: var(--common-font-family);
+  color: aliceblue;
+  text-align: center;
+  padding: 10px 0px;
+}
+.contact-form-inner div input {
+  border: none;
+  background-color: aliceblue;
+  width: 300px;
+  height: 40px;
+  font-size: var(--nav-font);
+  text-align: center;
+  border-radius: 5px;
+}
+.contact-form-inner div textarea {
+  border: none;
+  border-radius: 5px;
+  background-color: aliceblue;
+  width: 300px;
+  height: 100px;
+  font-size: var(--nav-font);
+  font-family: var(--common-font-family);
+  text-align: center;
+}
+.contact-form-inner div {
+  margin: 20px 0px;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  /* max-width: 100%; */
+  /* height: 350px; */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/footer.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  font-family: var(--common-font-family);
+  flex-wrap: wrap;
+}
+.footer1,.footer2,.footer3{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+   margin: 10px 0px;
+    align-items: center;
+    text-align: center;
+}
+.footer h2{
+    color: var(--heading-color);
+    font-size: 2rem;
+    padding: 7px 0px;
+}
+
+.footer p, .footer h3{
+    color: aliceblue;
+    padding: 7px 10px;
+}
+
+.footer-icons a{
+    color: aliceblue;
+    transition: all 0,4s;
+    font-size: 1.7rem;
+    padding: 7px 0px;
+    margin: 0px 5px;
+}
+
+.footer-icons a :hover{
+    color: var(--heading-color);
+}
+.footer input{
+    height: 35px;
+    background-color: rgb(51, 51, 51);
+    border: none;
+    text-align: center;
+    margin: 7px 0px;
+    color: aliceblue;
+}
+.Subscribe{
+    margin: 7px 0px;
+}
