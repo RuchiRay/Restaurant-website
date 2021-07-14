@@ -155,10 +155,13 @@ html {
   font-family: var(--common-font-family);
   flex-wrap: wrap;
 }
+.footer1{
+  padding-left: 20px;
+}
 .footer1,.footer2,.footer3{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 280px;
    margin: 10px 0px;
     align-items: center;
     text-align: center;
@@ -195,4 +198,14 @@ html {
 }
 .Subscribe{
     margin: 7px 0px;
+}
+.copyright{
+  background-color: black;
+  color: rgb(109, 111, 112);
+  font-family: var(--common-font-family);
+  text-align: center;
+  padding: 20px 0px;
+}
+.heart{
+  color: var(--heading-color);
 }
