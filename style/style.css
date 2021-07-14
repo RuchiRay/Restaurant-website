@@ -24,7 +24,9 @@ html{
     left: 0;
     background-color: rgba(0, 0, 0,0.5);
 }
-
+.nav-wrapper.sticky{
+  background-color: black;
+}
 .navbar{
     display: flex;
     position: relative;
