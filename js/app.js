@@ -25,6 +25,7 @@ const swiper = new Swiper(".swiper-container", {
 })
 // for navbar
 const hamburger = document.querySelector(".hamburger");
+const ham = document.getElementById('ham')
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 const nav = document.querySelector(".nav-wrapper");
@@ -35,7 +36,16 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
-
+for(let link of links){
+  link.addEventListener('click',()=>{
+    navLinks.classList.toggle("open");
+    links.forEach((link) => {
+      link.classList.toggle("fade");
+    });
+    console.log(ham);
+    ham.classList.toggle('opened')
+  })
+}
 window.onscroll = () => {
   this.scrollY > 20
     ? nav.classList.add("sticky")

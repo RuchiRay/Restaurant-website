@@ -55,7 +55,7 @@
                 </ul>
             </div>
             <div class="hamburger">
-                <button class="menu hamburger"
+                <button class="menu hamburger " id="ham"
                     onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
                     aria-label="Main Menu">
                     <svg width="50" height="50" viewBox="0 0 100 100">
@@ -129,24 +129,13 @@
         <h2 class="heading">Our Menu.</h2>
         <h3 class="sub-heading">Choose your meal</h3>
         <div class="menu-nav">
-            <button class="foo-item " data-filter='all'>All</button>
+            <!-- <button class="foo-item " data-filter='all'>All</button> -->
             <button class="foo-item " data-filter='.breakfast'>Breakfast</button>
             <button class="foo-item " data-filter='.lunch'>Lunch</button>
             <button class="foo-item " data-filter='.Snacks'>Snacks</button>
             <button class="foo-item " data-filter='.dinner'>Dinner</button>
         </div>
         <div class="menu-container">
-
-            <div class="menu-content mix lunch">
-                <div class="menu-img">
-                    <img src="images/lnch5.jpg" alt="image">
-                </div>
-                <div class="menu-data">
-                    <p class="menu-subtitle">Steak</p>
-                    <p class="price">$30.00</p>
-                </div>
-            </div>
-
             <div class="menu-content mix breakfast">
                 <div class="menu-img">
                     <img src="images/bf4.jpg" alt="image">
@@ -156,28 +145,6 @@
                     <p class="price">$21.00</p>
                 </div>
             </div>
-
-            <div class="menu-content mix Snacks">
-                <div class="menu-img">
-                    <img src="images/sn2.jpg" alt="image">
-                </div>
-                <div class="menu-data">
-                    <p class="menu-subtitle">Pasta</p>
-                    <p class="price">$16.00</p>
-                </div>
-            </div>
-
-            <div class="menu-content mix dinner">
-                <div class="menu-img">
-                    <img src="images/din5.jpg" alt="image">
-                </div>
-                <div class="menu-data">
-
-                    <p class="menu-subtitle">Indian platter</p>
-                    <p class="price">$32.00</p>
-                </div>
-            </div>
-
             <div class="menu-content mix breakfast">
                 <div class="menu-img">
                     <img src="images/bf5.jpg" alt="image">
@@ -187,7 +154,6 @@
                     <p class="price">$15.00</p>
                 </div>
             </div>
-
             <div class="menu-content mix breakfast">
                 <div class="menu-img">
                     <img src="images/bf7.jpg" alt="image">
@@ -197,7 +163,33 @@
                     <p class="price">$21.00</p>
                 </div>
             </div>
-
+            <div class="menu-content mix breakfast">
+                <div class="menu-img">
+                    <img src="images/bf2.jpg" alt="image">
+                </div>
+                <div class="menu-data">
+                    <p class="menu-subtitle">Eggs</p>
+                    <p class="price">$20.00</p>
+                </div>
+            </div>
+            <div class="menu-content mix breakfast">
+                <div class="menu-img">
+                    <img src="images/bf1.jpg" alt="image">
+                </div>
+                <div class="menu-data">
+                    <p class="menu-subtitle">Yogurt</p>
+                    <p class="price">$42.00</p>
+                </div>
+            </div>
+            <div class="menu-content mix lunch">
+                <div class="menu-img">
+                    <img src="images/lnch5.jpg" alt="image">
+                </div>
+                <div class="menu-data">
+                    <p class="menu-subtitle">Steak</p>
+                    <p class="price">$30.00</p>
+                </div>
+            </div>
             <div class="menu-content mix lunch">
                 <div class="menu-img">
                     <img src="images/lnch1.jpg" alt="image">
@@ -238,16 +230,16 @@
                 </div>
             </div>
 
-            <div class="menu-content mix breakfast">
+
+            <div class="menu-content mix Snacks">
                 <div class="menu-img">
-                    <img src="images/bf2.jpg" alt="image">
+                    <img src="images/sn2.jpg" alt="image">
                 </div>
                 <div class="menu-data">
-                    <p class="menu-subtitle">Eggs</p>
-                    <p class="price">$20.00</p>
+                    <p class="menu-subtitle">Pasta</p>
+                    <p class="price">$16.00</p>
                 </div>
             </div>
-
             <div class="menu-content mix Snacks">
                 <div class="menu-img">
                     <img src="images/sn3.jpg" alt="image">
@@ -280,6 +272,25 @@
 
             <div class="menu-content mix dinner">
                 <div class="menu-img">
+                    <img src="images/din5.jpg" alt="image">
+                </div>
+                <div class="menu-data">
+
+                    <p class="menu-subtitle">Indian platter</p>
+                    <p class="price">$32.00</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+          
+            <div class="menu-content mix dinner">
+                <div class="menu-img">
                     <img src="images/din1.jpg" alt="image">
                 </div>
                 <div class="menu-data">
@@ -298,15 +309,7 @@
                 </div>
             </div>
 
-            <div class="menu-content mix breakfast">
-                <div class="menu-img">
-                    <img src="images/bf1.jpg" alt="image">
-                </div>
-                <div class="menu-data">
-                    <p class="menu-subtitle">Yogurt</p>
-                    <p class="price">$42.00</p>
-                </div>
-            </div>
+
 
             <div class="menu-content mix dinner">
                 <div class="menu-img">
@@ -492,7 +495,7 @@
             <form action="" class="form">
                 <div class="name">
                     <p>Name</p>
-                    <input type="text"  placeholder="Your Name">
+                    <input type="text" placeholder="Your Name">
                 </div>
                 <div class="e-mail">
                     <p>E-mail</p>
@@ -500,15 +503,15 @@
                 </div>
                 <div class="phone">
                     <p>Phone Number</p>
-                    <input type="number"  placeholder="Your number">
+                    <input type="number" placeholder="Your number">
                 </div>
                 <div class="check-in">
                     <p>Date</p>
-                    <input type="date"  placeholder="check-in date">
+                    <input type="date" placeholder="check-in date">
                 </div>
                 <div class="time">
                     <p>Time</p>
-                    <input type="time"  placeholder="time">
+                    <input type="time" placeholder="time">
                 </div>
 
                 <div class="guest">
@@ -672,30 +675,30 @@
         <h2 class="heading" id="speciality-heading">Contact Us.</h2>
         <div class="box-wrapper contact">
             <div class="box2 contact">
-                    <div class="contact-form">
-                        <form action="" class="contact-form-inner">
-                            <div class="name">
-                                <!-- <p>Name</p> -->
-                                <input type="text"placeholder="Enter your name">
-                            </div>
-                            <div class="number">
-                                <!-- <p>Number</p> -->
-                                <input type="text"  placeholder="Enter your number">
-                            </div>
-                            <div class="e-mail">
-                                <!-- <p>E-mail</p> -->
-                                <input type="email"  placeholder="Enter your e-mail">
-                            </div>
-                            <div class="message">
-                                <!-- <p>Message</p> -->
-                                <textarea  cols="41" rows="6" placeholder="Enter your message"></textarea>
-                            </div>
-                        </form>
-                        <div class="reserve-btn">
-                            <a href="" class="banner-btn">Submit</a>
+                <div class="contact-form">
+                    <form action="" class="contact-form-inner">
+                        <div class="name">
+                            <!-- <p>Name</p> -->
+                            <input type="text" placeholder="Enter your name">
                         </div>
+                        <div class="number">
+                            <!-- <p>Number</p> -->
+                            <input type="text" placeholder="Enter your number">
+                        </div>
+                        <div class="e-mail">
+                            <!-- <p>E-mail</p> -->
+                            <input type="email" placeholder="Enter your e-mail">
+                        </div>
+                        <div class="message">
+                            <!-- <p>Message</p> -->
+                            <textarea cols="41" rows="6" placeholder="Enter your message"></textarea>
+                        </div>
+                    </form>
+                    <div class="reserve-btn">
+                        <a href="" class="banner-btn">Submit</a>
                     </div>
-                
+                </div>
+
             </div>
             <div class="box3 contact">
                 <div class="box3-info">
@@ -747,7 +750,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, explicabo?</p>
             <h3>Follow us</h3>
             <div class="footer-icons">
-                <a href=""><i class="fab fa-facebook-square ficons" ></i></a>
+                <a href=""><i class="fab fa-facebook-square ficons"></i></a>
                 <a href=""><i class="fab fa-instagram-square"></i></a>
                 <a href=""><i class="fab fa-twitter-square"></i></a>
             </div>
@@ -769,7 +772,7 @@
         <span>Made with</span>
         <span class="heart">&#10084;</span>
         <span> by Ruchi Ray</span>
-       
+
     </div>
     <!-- for slick carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
