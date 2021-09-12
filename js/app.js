@@ -9,7 +9,7 @@ $('.banner-area').slick({
 
 });
 // swiper slider
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,

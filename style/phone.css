@@ -154,7 +154,7 @@ html {
     font-size: 12vw;
   }
   /* testimonial */
-  .swiper-container {
+  .swiper {
     width: 100%;
   }
 }
